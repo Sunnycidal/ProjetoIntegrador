@@ -1,0 +1,79 @@
+\documentclass[12pt, openright, twoside, a4paper, brazil]{abntex2}
+
+
+%% % % % % % % % % % % % % % % % % % % % % % % % % PACOTES PADRÃO
+
+\usepackage[T1]{fontenc}                         % acentos corretos no PDF               
+\usepackage[utf8]{inputenc}                      % permite digitar acentos                
+\usepackage{lmodern}                             % fonte latin modern                     
+
+\usepackage{indentfirst}                         % indenta o primeiro parágrafo de cada seção
+\usepackage{microtype}                           % melhora a justificação do texto
+
+\usepackage{graphicx}                            % permite inserir imagens
+\usepackage{xcolor}                              % suporte a cores 
+
+\usepackage[brazilian,hyperpageref]{backref}     % quais pág. cada referência foi citada
+\usepackage[alf]{abntex2cite}                    % citações no padrão ABNT (autor-data)
+
+
+%% % % % % % % % % % % % % % % % % % % % % % % % % PACOTE LISTINGS (p/ exibir código-fonte java)
+
+\usepackage{listings}                            
+
+\definecolor{javakeyword}{RGB}{0,0,180}          % azul para palavras-chave
+\definecolor{javacomment}{RGB}{63,127,95}        % verde para comentários
+\definecolor{javastring}{RGB}{163,21,21}         % vermelho para strings
+\definecolor{javabg}{RGB}{248,248,248}           % cinza claro para fundo do bloco
+
+\lstdefinestyle{javaStyle}{
+    language=Java,                               % sintaxe Java
+    backgroundcolor=\color{javabg},              % cor de fundo
+    basicstyle=\ttfamily\small,                  % fonte monoespaçada pequena
+    keywordstyle=\color{javakeyword}\bfseries,   % palavras-chave em azul negrito
+    commentstyle=\color{javacomment}\itshape,    % comentários em verde itálico
+    stringstyle=\color{javastring},              % strings em vermelho
+    numberstyle=\tiny\color{gray},               % números de linha em cinza
+    numbers=left,                                % números de linha à esquerda
+    stepnumber=1,                                % numera todas as linhas
+    numbersep=8pt,                               % distância dos números ao código
+    showspaces=false,                            % não mostra espaços
+    showstringspaces=false,                      % não mostra espaços em strings
+    showtabs=false,                              % não mostra tabs
+    frame=single,                                % borda simples ao redor do bloco
+    rulecolor=\color{gray},                      % cor da borda
+    tabsize=4,                                   % tab = 4 espaços
+    breaklines=true,                             % quebra linhas longas
+    breakatwhitespace=true,                      % só quebra em espaços
+    captionpos=b,                                % legenda abaixo do bloco
+}
+\lstset{style=javaStyle}
+
+
+\instituicao{Centro Universitário Senac \par Análise e Desenvolvimento de Sistemas}
+\autor{Altino Ávila \\ Guilherme Diniz \\ Vivian Passos \\ Taciara do que?}
+\titulo{Projeto Integrador I:{} Sistema de gerenciamento de comissões artísticas}   
+\preambulo{Projeto Integrador I}         
+\orientador{Marcus Gália}   
+\tipotrabalho{Projeto}                  
+\local{São Paulo}                    
+\data{2026}  
+
+
+
+\begin{document}
+
+\selectlanguage{brazil} 
+\frenchspacing       
+\imprimircapa{}
+\imprimirfolhaderosto{}
+\tableofcontents{}
+\cleardoublepage{}
+
+
+
+
+
+\end{document}
+
+
