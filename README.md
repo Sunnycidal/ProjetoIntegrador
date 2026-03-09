@@ -18,7 +18,7 @@ O sistema desenvolvido é um **CRUD em Java**, contemplando as operações de ca
 | Altino Ávila
 | Guilherme Diniz 
 | Vivian Passos 
-| Taciara ??? 
+| Taciara Roseno 
 
 ### Stacks utilizadas
 
