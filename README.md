@@ -26,6 +26,8 @@ O sistema desenvolvido é um **CRUD em Java**, contemplando as operações de ca
 - **LaTeX** (abnTeX2) — documentação acadêmica no padrão ABNT
 - **draw.io**         — criação dos fluxogramas
 - **Git / GitHub**    — versionamento do projeto
+- **MySQL**           — banco de dados do sistema
+- **Figma**           — prototipação da interface
 
 ### Orientador
 
