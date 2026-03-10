@@ -1,4 +1,9 @@
-\documentclass[12pt, openright, twoside, a4paper, brazil]{abntex2}
+\RequirePackage{silence}
+\WarningFilter{memoir}{\settocpreprocessor}
+\WarningFilter{microtype}{Unable to apply patch `footnote'}
+\WarningFilter{listings}{First Aid}
+
+\documentclass[12pt, openright, twoside, a4paper, brazilian]{abntex2}
 
 
 %% % % % % % % % % % % % % % % % % % % % % % % % % PACOTES PADRÃO
@@ -8,13 +13,13 @@
 \usepackage{lmodern}                             % fonte latin modern                     
 
 \usepackage{indentfirst}                         % indenta o primeiro parágrafo de cada seção
-\usepackage{microtype}                           % melhora a justificação do texto
+\usepackage[nopatch=footnote]{microtype}                           % melhora a justificação do texto
 
 \usepackage{graphicx}                            % permite inserir imagens
 \usepackage{xcolor}                              % suporte a cores 
 
 \usepackage[brazilian,hyperpageref]{backref}     % quais pág. cada referência foi citada
-\usepackage[alf]{abntex2cite}                    % citações no padrão ABNT (autor-data)
+\usepackage[num]{abntex2cite}                    % citações no padrão ABNT (autor-data)
 
 
 %% % % % % % % % % % % % % % % % % % % % % % % % % PACOTE LISTINGS (p/ exibir código-fonte java)
@@ -49,6 +54,7 @@
 }
 \lstset{style=javaStyle}
 
+\PassOptionsToPackage{abnt-show-options=warn}{abntex2cite}
 
 \instituicao{Centro Universitário Senac \par Análise e Desenvolvimento de Sistemas}
 \autor{Altino Ávila \\ Guilherme Diniz \\ Vivian Passos \\ Taciara Roseno}
@@ -60,10 +66,9 @@
 \data{2026}  
 
 
-
 \begin{document}
 
-\selectlanguage{brazil} 
+\selectlanguage{brazilian} 
 \frenchspacing       
 \imprimircapa{}
 \imprimirfolhaderosto{}
@@ -73,6 +78,11 @@
 \input{caps/cap1.tex}
 
 
+
+\postextual{}
+\bibliography{referencias}
+\nocite{java, mysql, abntex2, figma, drawio, abnt14724, abnt6023, tiobe, 
+stackoverflow_survey, date2004, elmasri2009, heuser2004}
 
 \end{document}
 
