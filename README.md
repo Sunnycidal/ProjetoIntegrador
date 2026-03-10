@@ -11,7 +11,7 @@ Este repositório reúne todos os projetos desenvolvidos ao longo do curso, orga
 
 Sistema de gerenciamento de comissões para artistas independentes. A aplicação permite o controle completo de clientes, pedidos, prazos e valores, proporcionando maior organização e profissionalismo para artistas que trabalham sob encomenda.
 
-O sistema desenvolvido é um **CRUD em Java**, contemplando as operações de cadastrar(CREATE), visualizar(READ), editar(UPDATE) e excluir(DELETE) registros.
+O sistema desenvolvido é um **CRUD em Java**, contemplando as operações de cadastrar (CREATE), visualizar (READ), editar (UPDATE) e excluir (DELETE) registros.
 
 ### Integrantes
 
@@ -26,8 +26,10 @@ O sistema desenvolvido é um **CRUD em Java**, contemplando as operações de ca
 - **LaTeX** (abnTeX2) — documentação acadêmica no padrão ABNT
 - **draw.io**         — criação dos fluxogramas
 - **Git / GitHub**    — versionamento do projeto
-- **MySQL**           — banco de dados do sistema
+- **MySQL**           — sistema gerenciador de banco de dados
 - **Figma**           — prototipação da interface
+- **IntelliJ IDEA**   — desenvolvimento Java
+- **VS Code**         — edição do documento LaTeX
 
 ### Orientador
 
