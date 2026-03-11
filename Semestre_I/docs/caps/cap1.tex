@@ -1,25 +1,57 @@
 \chapter{Introdução}
-ESCREVER INTROOO
+
+Com o crescimento das redes sociais e das plataformas digitais, o trabalho por 
+sistemas digitais tornou-se cada vez mais comum na sociedade, trazendo uma nova forma 
+de relação de trabalho marcada por características como individualidade, 
+intermitência e informalidade, conhecida como ``uberização'' das relações de 
+trabalho~\cite{abilio2020}. Nesse cenário, muitos artistas independentes passaram a divulgar e 
+vender seus trabalhos diretamente pela internet. Assim, tornou-se comum a realização
+de comissões artísticas, produções personalizadas feitas sob encomenda de clientes,
+geralmente solicitadas por meio de mensagens em redes sociais ou outras plataformas 
+de comunicação.
+
+Apesar de facilitar o contato e a divulgação do trabalho, esse modelo pode gerar 
+dificuldades na organização das encomendas. Informações importantes, como dados 
+do cliente e referências da arte solicitada, muitas vezes ficam espalhadas em 
+diferentes conversas ou anotações. Com o aumento do número de pedidos, esse 
+processo pode se tornar confuso e dificultar o acompanhamento das solicitações. 
+
+Diante disso, este trabalho propõe o desenvolvimento de um sistema de gerenciamento 
+que centralize os dados dos pedidos e facilite o controle das encomendas. O projeto 
+foi desenvolvido sob a ótica interdisciplinar das matérias do primeiro semestre do 
+curso de Análise e Desenvolvimento de Sistemas, aplicando metodologias de levantamento de requisitos e modelagem de 
+dados para fundamentar a solução proposta.
+
+Para detalhar essa proposta, este documento apresenta, a seguir, os objetivos da 
+aplicação e o perfil de seu público-alvo. Em seguida, são especificados os requisitos 
+funcionais que delimitarão o escopo do sistema, finalizando com o embasamento técnico,
+que destaca as disciplinas teóricas e as tecnologias empregadas no desenvolvimento do
+projeto.
 
 \section{Público-Alvo}
-Artistas independentes que realizam trabalhos personalizados 
-sob encomenda e necessitam de uma plataforma para organizar 
-clientes e acompanhar pedidos.
+O público-alvo da aplicação é composto por artistas independentes e autônomos 
+de 18 a 40 anos que realizam trabalhos artísticos personalizados, sob encomenda (como quadros e pinturas) e necessitam de uma plataforma
+para organizar clientes e acompanhar pedidos.
 
 \section{Objetivo do Sistema}
-Desenvolver uma aplicação cujo objetivo é auxiliar artistas 
-independentes que trabalham sob comissão a organizar e gerenciar
-seus pedidos. O sistema permite o controle completo de clientes,
-solicitações, prazos e valores, proporcionando maior organização
-e profissionalismo.
+O objetivo da aplicação é auxiliar artistas independentes que trabalham sob 
+comissão a organizar e gerenciar seus clientes, pedidos e materiais. O sistema 
+visa permitir o controle completo de clientes, solicitações, prazos e valores, 
+proporcionando maior organização e profissionalismo, além de contar com dashboards 
+para auxiliar na análise do negócio.
 
 \section{Requisitos Funcionais}
 \begin{itemize}
-    \item Cadastrar, editar, visualizar e excluir pedidos (CRUD);
+    \item Cadastrar, editar, visualizar e excluir pedidos;
     \item Cadastrar e gerenciar clientes;
-    \item Adicionar observações aos pedidos;
-    \item Registrar especificações (referências, medidas, cores, detalhes);
-    \item Definir valor e prazo após análise do administrador.
+    \item Registrar especificações nos pedidos 
+    (referências, medidas, cores, detalhes e observações);
+    \item Definir valor e prazo após análise do administrador;
+    \item Emitir notificações automáticas sobre o vencimento de prazos;
+    \item Gerar relatórios in-app de gastos e exibir \textit{dashboards} com dados 
+    gerais da aplicação;
+    \item Gerar automaticamente termos de serviço para o cliente com base 
+    em um template pré-definido.
 \end{itemize}
 
 
@@ -42,12 +74,15 @@ normalização de tabelas, conceitos fundamentados no modelo
 entidade-relacionamento (ER) proposto por~\cite{chen1976}.
 
 \textbf{Conceitos da Computação:}
-A matéria de Conceitos da Computação introduziu fundamentos teóricos de 
-criptografia, os quais serão aplicados no sistema para o armazenamento 
-seguro de senhas dos usuários, uma vez que o sistema conta com dois perfis 
-de acesso: o Administrador (ADM), responsável pelo gerenciamento das 
-solicitações, e o Usuário (USR), o cliente que irá efetuar a solicitação 
-do serviço.
+A disciplina introduziu fundamentos de Sistemas de Informação (SI) e 
+tratamento de dados, essenciais para a estruturação do projeto. Os 
+conceitos foram aplicados na modelagem de um fluxo eficiente de coleta, 
+armazenamento e processamento dos dados das comissões artísticas. Como 
+a aplicação é de uso exclusivo do artista, sem a entrada direta de dados
+por clientes, o foco do sistema de informação é transformar os registros
+brutos de pedidos e materiais em informações estruturadas 
+(\textit{dashboards} e relatórios) para auxiliar na gestão interna e na 
+tomada de decisão.
 
 \textbf{Usabilidade, Interface e UX:}
 Os estudos de Usabilidade, Interface e UX, baseados na metodologia de 
@@ -67,8 +102,21 @@ Foi escolhida como linguagem principal do projeto devido à familiaridade
 da equipe com a tecnologia e ao interesse em aprofundar os conhecimentos 
 adquiridos ao longo do curso~\cite{java}.
 
+\textbf{brModelo:}
+O brModelo é uma ferramenta de \textit{software} livre voltada para o ensino 
+e a prática de modelagem de banco de dados relacional~\cite{brmodelo}. Sua 
+escolha para este projeto deve-se à familiaridade da equipe, uma vez que a
+ferramenta é frequentemente utilizada nas aulas da disciplina de Banco de Dados.
+O programa foi utilizado para a criação dos modelos conceitual e lógico, facilitando
+a visualização das entidades, atributos e suas respectivas cardinalidades antes da 
+implementação física no SGBD.~\cite{brmodelo}
+
 \textbf{MySQL:}
-Falta usar para poder formular~\cite{mysql}.
+O MySQL é um Sistema de Gerenciamento de Banco de Dados Relacional (SGBDR) 
+de código aberto amplamente utilizado na indústria. Sua escolha para este 
+projeto justifica-se pela confiabilidade e excelente integração com a 
+linguagem Java, permitindo a persistência eficiente e estruturada dos dados 
+gerados pelas operações do sistema~\cite{mysql}.
 
 \textbf{Figma:}
 O Figma é uma plataforma de design colaborativo baseada em nuvem~\cite{figma}.
