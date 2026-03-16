@@ -1,3 +1,8 @@
+# ====================================================================
+# GITIGNORE - PROJETO INTEGRADOR (ADS SENAC)
+# ====================================================================
+
+# LATEX (Arquivos auxiliares de compilação)
 *.aux
 *.log
 *.toc
@@ -14,3 +19,40 @@
 *.bbl
 *.blg
 *.brf
+
+# JAVA (Compilados e pacotes)
+*.class
+*.jar
+*.war
+*.ear
+target/
+bin/
+build/
+out/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IDEs (Configurações locais - ignorar pastas inteiras)
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# SISTEMA E NUVEM (OneDrive/Windows/Linux)
+desktop.ini
+Thumbs.db
+.DS_Store
+.kotlin
