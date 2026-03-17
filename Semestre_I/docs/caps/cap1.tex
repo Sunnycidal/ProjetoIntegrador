@@ -38,7 +38,9 @@ O objetivo da aplicação é auxiliar artistas independentes que trabalham sob
 comissão a organizar e gerenciar seus clientes, pedidos e materiais. O sistema 
 visa permitir o controle completo de clientes, solicitações, prazos e valores, 
 proporcionando maior organização e profissionalismo, além de contar com dashboards 
-para auxiliar na análise do negócio.
+para auxiliar na análise do negócio. A versão inicial da aplicação será orientada 
+à interface de linha de comando (CLI), priorizando a implementação das 
+funcionalidades principais antes da adição de uma interface gráfica.
 
 \section{Requisitos Funcionais}
 \begin{itemize}
@@ -100,7 +102,19 @@ ocupando altas posições em rankings relevantes como o TIOBE Index~\cite{tiobe}
 e o Stack Overflow Developer Survey~\cite{stackoverflow_survey}. 
 Foi escolhida como linguagem principal do projeto devido à familiaridade 
 da equipe com a tecnologia e ao interesse em aprofundar os conhecimentos 
-adquiridos ao longo do curso~\cite{java}.
+adquiridos ao longo do curso~\cite{java}. A versão adotada é o Java 21, 
+por ser a versão LTS (Long-Term Support) mais recente, garantindo suporte 
+estendido e estabilidade para o desenvolvimento~\cite{java21}. A distribuição 
+utilizada é o Microsoft Build of OpenJDK, licença gratuita para uso pessoal 
+e acadêmico~\cite{msjdk}.
+
+\textbf{Apache Maven:}
+O Apache Maven é uma ferramenta de automação de build e gerenciamento de 
+dependências amplamente utilizada em projetos Java~\cite{maven}. Foi adotado 
+no projeto por ser mais moderno e consolidado que alternativas como o Apache 
+Ant, oferecendo um modelo declarativo de configuração via arquivo 
+\texttt{pom.xml} e facilitando o gerenciamento das bibliotecas e dependências 
+do sistema.
 
 \textbf{brModelo:}
 O brModelo é uma ferramenta de \textit{software} livre voltada para o ensino 

@@ -1,17 +1,24 @@
 # Projeto Integrador — Análise e desenvolvimento de sistemas
 
-Repositório da disciplina de **Projeto Integrador** do curso de Análise e Desenvolvimento de Sistemas — Centro Universitário SENAC.
+Repositório da disciplina de **Projeto Integrador** do curso de Análise 
+e Desenvolvimento de Sistemas — Centro Universitário SENAC.
 
-Este repositório reúne todos os projetos desenvolvidos ao longo do curso, organizados por semestre.
+Este repositório reúne todos os projetos desenvolvidos ao longo do curso, 
+organizados por semestre.
 
 
 ## Semestre I
 
 ### Briefing
 
-Sistema de gerenciamento de comissões para artistas independentes. A aplicação permite o controle completo de clientes, pedidos, prazos e valores, proporcionando maior organização e profissionalismo para artistas que trabalham sob encomenda.
+Sistema de gerenciamento de comissões para artistas independentes. A 
+aplicação permite o controle completo de clientes, pedidos, prazos e 
+valores, proporcionando maior organização e profissionalismo para 
+artistas que trabalham sob encomenda.
 
-O sistema desenvolvido é um **CRUD em Java**, contemplando as operações de cadastrar (CREATE), visualizar (READ), editar (UPDATE) e excluir (DELETE) registros.
+O sistema desenvolvido é um **CRUD em Java**, contemplando as operações 
+de cadastrar (CREATE), visualizar (READ), editar (UPDATE) e excluir 
+(DELETE) registros.
 
 ### Integrantes
 
@@ -22,7 +29,8 @@ O sistema desenvolvido é um **CRUD em Java**, contemplando as operações de ca
 
 ### Stacks utilizadas
 
-- **Java**            — linguagem principal do sistema
+- **Java 21 LTS**     — linguagem principal (Microsoft Build of OpenJDK)
+- **Apache Maven**    — gerenciamento de build e dependências
 - **LaTeX** (abnTeX2) — documentação acadêmica no padrão ABNT
 - **draw.io**         — criação dos fluxogramas
 - **Git / GitHub**    — versionamento do projeto
@@ -30,6 +38,7 @@ O sistema desenvolvido é um **CRUD em Java**, contemplando as operações de ca
 - **Figma**           — prototipação da interface
 - **IntelliJ IDEA**   — desenvolvimento Java
 - **VS Code**         — edição do documento LaTeX
+
 
 ### Orientador
 
