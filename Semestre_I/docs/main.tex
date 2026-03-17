@@ -16,10 +16,13 @@
 \usepackage[nopatch=footnote]{microtype}         % melhora a justificação do texto
 
 \usepackage{graphicx}                            % permite inserir imagens
+\usepackage{pdfpages}                            % pacote para inserir PDFs
 \usepackage{xcolor}                              % suporte a cores 
 
 \usepackage[brazilian,hyperpageref]{backref}     % quais pág. cada referência foi citada
 \usepackage[alf]{abntex2cite}                    % citações no padrão ABNT (autor-data)
+
+\graphicspath{{imagens/}}                        % caminho das figuras
 
 
 %% % % % % % % % % % % % % % % % % % % % % % % % % PACOTE LISTINGS (p/ exibir código-fonte java)
@@ -72,10 +75,14 @@
 \frenchspacing       
 \imprimircapa{}
 \imprimirfolhaderosto{}
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures
+\cleardoublepage{}
 \tableofcontents{}
 \cleardoublepage{}
 \textual{}
 \input{caps/cap1.tex}
+\input{caps/cap2.tex}
 
 
 
