@@ -9,7 +9,6 @@ Sistema de gerenciamento de comissoes artisticas desenvolvido como Projeto Integ
 - **Versao:** Java 21 (LTS)
 - **Distribuicao:** Microsoft
 - **Motivo da versao:** O Java 21 e a versao LTS (Long-Term Support) atual, com suporte estendido e ampla adocao no mercado. Versoes LTS recebem correcoes de seguranca por anos, ao contrario das versoes de ciclo curto que ficam obsoletas em seis meses.
-- **Motivo da distribuicao:** O Temurin e uma distribuicao open source gratuita para qualquer uso, mantida pela Eclipse Foundation. E a alternativa mais adotada pela comunidade desde que a Oracle passou a cobrar pelo uso comercial de sua propria distribuicao a partir de 2019.
 
 ### Build
 
