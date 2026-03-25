@@ -19,8 +19,8 @@ processo pode se tornar confuso e dificultar o acompanhamento das solicitações
 Diante disso, este trabalho propõe o desenvolvimento de um sistema de gerenciamento 
 que centralize os dados dos pedidos e facilite o controle das encomendas. O projeto 
 foi desenvolvido sob a ótica interdisciplinar das matérias do primeiro semestre do 
-curso de Análise e Desenvolvimento de Sistemas, aplicando metodologias de levantamento de requisitos e modelagem de 
-dados para fundamentar a solução proposta.
+curso de Análise e Desenvolvimento de Sistemas, aplicando metodologias de 
+levantamento de requisitos e modelagem de processos para fundamentar a solução proposta.
 
 Para detalhar essa proposta, este documento apresenta, a seguir, os objetivos da 
 aplicação e o perfil de seu público-alvo. Em seguida, são especificados os requisitos 
@@ -30,15 +30,15 @@ projeto.
 
 \section{Público-Alvo}
 O público-alvo da aplicação é composto por artistas independentes e autônomos 
-de 18 a 40 anos que realizam trabalhos artísticos personalizados, sob encomenda (como quadros e pinturas) e necessitam de uma plataforma
+que realizam trabalhos artísticos personalizados, sob encomenda 
+(como quadros e pinturas) e necessitam de uma plataforma
 para organizar clientes e acompanhar pedidos.
 
 \section{Objetivo do Sistema}
 O objetivo da aplicação é auxiliar artistas independentes que trabalham sob 
 comissão a organizar e gerenciar seus clientes, pedidos e materiais. O sistema 
 visa permitir o controle completo de clientes, solicitações, prazos e valores, 
-proporcionando maior organização e profissionalismo, além de contar com dashboards 
-para auxiliar na análise do negócio. A versão inicial da aplicação será orientada 
+proporcionando maior organização e profissionalismo. A versão inicial da aplicação será orientada 
 à interface de linha de comando (CLI), priorizando a implementação das 
 funcionalidades principais antes da adição de uma interface gráfica.
 
@@ -48,14 +48,8 @@ funcionalidades principais antes da adição de uma interface gráfica.
     \item Cadastrar e gerenciar clientes;
     \item Registrar especificações nos pedidos 
     (referências, medidas, cores, detalhes e observações);
-    \item Definir valor e prazo após análise do administrador;
-    \item Emitir notificações automáticas sobre o vencimento de prazos;
-    \item Gerar relatórios in-app de gastos e exibir \textit{dashboards} com dados 
-    gerais da aplicação;
-    \item Gerar automaticamente termos de serviço para o cliente com base 
-    em um template pré-definido.
+    \item Definir valor e prazo do pedido;
 \end{itemize}
-
 
 \section{Disciplinas e Tecnologias Envolvidas}
 
@@ -69,11 +63,12 @@ Java. Esses conhecimentos foram essenciais para a implementação das 4
 operações básicas que compõem o núcleo de um sistema CRUD funcional.
 
 \textbf{Banco de Dados:}
-Os conceitos de modelagem e sistema de gerenciamento de banco de dados 
-relacional (SGBDR) foram fundamentais para o desenvolvimento da aplicação. 
-A disciplina auxiliou na definição das entidades, relacionamentos e 
-normalização de tabelas, conceitos fundamentados no modelo 
-entidade-relacionamento (ER) proposto por~\cite{chen1976}.
+Os conceitos de modelagem de dados relacionais forneceram embasamento 
+para a estruturação lógica das entidades da aplicação, em especial os 
+fundamentos do modelo entidade-relacionamento (ER) proposto por~\cite{chen1976}. Na 
+versão atual, a persistência dos dados é realizada por meio de arquivos 
+\texttt{.csv}, com previsão de migração para um Sistema de Gerenciamento 
+de Banco de Dados Relacional (SGBDR) em entregas futuras.
 
 \textbf{Conceitos da Computação:}
 A disciplina introduziu fundamentos de Sistemas de Informação (SI) e 
@@ -82,9 +77,8 @@ conceitos foram aplicados na modelagem de um fluxo eficiente de coleta,
 armazenamento e processamento dos dados das comissões artísticas. Como 
 a aplicação é de uso exclusivo do artista, sem a entrada direta de dados
 por clientes, o foco do sistema de informação é transformar os registros
-brutos de pedidos e materiais em informações estruturadas 
-(\textit{dashboards} e relatórios) para auxiliar na gestão interna e na 
-tomada de decisão.
+brutos de pedidos e materiais em informações estruturadas para auxiliar 
+na gestão interna e na tomada de decisão.
 
 \textbf{Usabilidade, Interface e UX:}
 Os estudos de Usabilidade, Interface e UX, baseados na metodologia de 
@@ -116,26 +110,11 @@ Ant, oferecendo um modelo declarativo de configuração via arquivo
 \texttt{pom.xml} e facilitando o gerenciamento das bibliotecas e dependências 
 do sistema.
 
-\textbf{brModelo:}
-O brModelo é uma ferramenta de \textit{software} livre voltada para o ensino 
-e a prática de modelagem de banco de dados relacional~\cite{brmodelo}. Sua 
-escolha para este projeto deve-se à familiaridade da equipe, uma vez que a
-ferramenta é frequentemente utilizada nas aulas da disciplina de Banco de Dados.
-O programa foi utilizado para a criação dos modelos conceitual e lógico, facilitando
-a visualização das entidades, atributos e suas respectivas cardinalidades antes da 
-implementação física no SGBD.~\cite{brmodelo}
-
-\textbf{MySQL:}
-O MySQL é um Sistema de Gerenciamento de Banco de Dados Relacional (SGBDR) 
-de código aberto amplamente utilizado na indústria. Sua escolha para este 
-projeto justifica-se pela confiabilidade e excelente integração com a 
-linguagem Java, permitindo a persistência eficiente e estruturada dos dados 
-gerados pelas operações do sistema~\cite{mysql}.
-
 \textbf{Figma:}
 O Figma é uma plataforma de design colaborativo baseada em nuvem~\cite{figma}.
-Foi escolhido como ferramenta de prototipação por ser amplamente utilizado 
-no mercado e por ser a principal ferramenta de design adotada pelo curso.
+Foi utilizado para a prototipação visual das interfaces previstas para versões 
+futuras da aplicação, por ser amplamente utilizado no mercado e por ser a 
+principal ferramenta de design adotada pelo curso.
 
 \textbf{draw.io:}
 O draw.io é uma ferramenta online de diagramação, modelagem visual 
