@@ -4,23 +4,41 @@ Repositório da disciplina de **Projeto Integrador** do curso de Análise e Dese
 
 Este repositório reúne todos os projetos desenvolvidos ao longo do curso, organizados por semestre.
 
+---
+
 ## Semestres
 
-### [Semestre I](./Semestre_I/README.md)
-Sistema de gerenciamento de comissões para artistas independentes (CRUD em Java com banco de dados MySQL).
+### [Semestre I - Lógica de Programação](./Semestre_I)
+**Sistema de Gerenciamento de Comissões para Artistas Independentes**
 
-### [Semestre II](./Semestre_II/README.md)
-A seguir...
-
-### [Semestre III](./Semestre_III/README.md)
-A seguir...
-
-### [Semestre IV](./Semestre_IV/README.md)
-A seguir...
-
-### [Semestre V](./Semestre_V/README.md)
-A seguir...
+- CRUD completo (Create, Read, Update, Delete)
+- Java Core e Fundamentos
+- Banco de dados MySQL
 
 ---
 
-Para mais informações sobre cada semestre, clique nos links acima.
+### [Semestre II - Desenvolvimento Estruturado](./Semestre_II)
+*Em breve...*
+
+---
+
+### [Semestre III - Desenvolvimento WEB](./Semestre_III)
+*Em breve...*
+
+---
+
+### [Semestre IV - Desenvolvimento Mobile](./Semestre_IV)
+*Em breve...*
+
+---
+
+### [Semestre V - Soluções para Organizações](./Semestre_V)
+*Em breve...*
+
+---
+
+## Informações
+
+Para mais detalhes sobre cada semestre, clique nos links acima ou acesse as respectivas pastas do repositório.
+
+**Linguagens principais:** Java, LaTeX
