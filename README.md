@@ -6,6 +6,25 @@ e Desenvolvimento de Sistemas — Centro Universitário SENAC.
 Este repositório reúne todos os projetos desenvolvidos ao longo do curso, 
 organizados por semestre.
 
+## Semestre II
+
+### Briefing
+
+A seguir
+
+### Integrantes
+
+| Altino Ávila
+|...
+
+### Stacks utilizadas
+
+???
+
+### Orientador
+
+**Alguém** — Centro Universitário Senac
+
 
 ## Semestre I
 
