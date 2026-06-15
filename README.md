@@ -1,6 +1,7 @@
-# Projeto Integrador — Análise e desenvolvimento de sistemas
+# Projeto Integrador (PI) — Análise e desenvolvimento de sistemas
 
-Repositório da disciplina de **Projeto Integrador** do curso de Análise e Desenvolvimento de Sistemas — Centro Universitário SENAC.
+Repositório da disciplina de **Projeto Integrador** do 
+curso de Análise e Desenvolvimento de Sistemas — Centro Universitário SENAC.
 
 Este repositório reúne todos os projetos desenvolvidos ao longo do curso, organizados por semestre.
 
@@ -13,7 +14,7 @@ Este repositório reúne todos os projetos desenvolvidos ao longo do curso, orga
 
 - CRUD completo (Create, Read, Update, Delete)
 - Java Core e Fundamentos
-- Banco de dados MySQL
+- Documentação
 
 ---
 
@@ -36,9 +37,3 @@ Este repositório reúne todos os projetos desenvolvidos ao longo do curso, orga
 *Em breve...*
 
 ---
-
-## Informações
-
-Para mais detalhes sobre cada semestre, clique nos links acima ou acesse as respectivas pastas do repositório.
-
-**Linguagens principais:** Java, LaTeX
